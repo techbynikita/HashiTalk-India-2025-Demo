@@ -1,0 +1,1 @@
+Deploy a simple web server on AWS using Terraform.
