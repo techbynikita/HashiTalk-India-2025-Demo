@@ -33,16 +33,14 @@ variable "aws_account_id" {
   default     = "029930584745"
 }
 
-resource "aws_s3_bucket" "zero_shot_demo" {
-  bucket = local.bucket_name
+resource "aws_s3_bucket" "zero_shot_demo"    {
+ bucket=local.bucket_name
 
-  tags = {
-    Project     = "HashiTalks-India-2025"
-    Demo        = "Zero-Shot"
-    Owner       = "Nikita-Mourya-AWSUG"
-    Environment = "demo"
-  }
-}
+  tags={ Project="HashiTalks-India-2025" 
+    Demo="Zero-Shot" 
+      Owner="Nikita-Mourya-AWSUG" 
+  Environment="demo"}
+ }
 
 resource "aws_s3_bucket_versioning" "zero_shot_demo" {
   bucket = aws_s3_bucket.zero_shot_demo.id
