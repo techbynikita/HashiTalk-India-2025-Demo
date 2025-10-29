@@ -1,17 +1,3 @@
-terraform {
-  required_version = ">= 1.3.0"
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = var.aws_region
-}
-
 data "aws_ami" "amazon_linux" {
   most_recent = true
 
@@ -39,10 +25,10 @@ resource "aws_security_group" "this" {
   vpc_id      = var.vpc_id
 
   egress {
-    from_port        = 0
-    to_port          = 0
-    protocol         = "-1"
-    cidr_blocks      = ["0.0.0.0/0"]
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
     ipv6_cidr_blocks = ["::/0"]
   }
 
@@ -82,4 +68,5 @@ resource "aws_instance" "this" {
     Name = var.name
   }, var.tags)
 }
+
 
