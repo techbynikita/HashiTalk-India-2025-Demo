@@ -40,12 +40,12 @@ variable "security_group_ids" {
 variable "ingress_rules" {
   description = "List of ingress rule objects for the created security group"
   type = list(object({
-    description       = optional(string)
-    from_port         = number
-    to_port           = number
-    protocol          = string
-    cidr_blocks       = optional(list(string), ["0.0.0.0/0"])
-    ipv6_cidr_blocks  = optional(list(string), ["::/0"])
+    description      = optional(string)
+    from_port        = number
+    to_port          = number
+    protocol         = string
+    cidr_blocks      = optional(list(string), ["0.0.0.0/0"])
+    ipv6_cidr_blocks = optional(list(string), ["::/0"])
   }))
   default = [
     {
