@@ -15,6 +15,20 @@ We'll move from **manual IaC** ➜ **AI-assisted workflows**, showing how prompt
 
 ---
 
+## 🗣️ Talk Abstract
+
+**Infra-as-Code Meets Prompt Engineering: AI-Powered Terraform Workflows**
+
+As AI tools rapidly evolve, they're transforming how we approach infrastructure—making it faster, more accessible, and intelligent. In this session, I’ll explore how Prompt Engineering can be applied to generate, optimize, and troubleshoot Terraform code using modern AI tools.
+
+We'll walk through the fundamentals of prompt engineering—like zero-shot, few-shot, and chain-of-thought prompting—and how these techniques can be used with open-source or publicly available AI assistants to build real-world Terraform configurations. Whether it's generating boilerplate modules, adding tagging standards, or refactoring existing code, you’ll see how prompts can drive productivity and accelerate learning for DevOps and Cloud Engineers.
+
+This talk includes a live demo of generating Terraform with prompts using AI tools, and practical insights from recent PoCs to show what works, what doesn’t, and where AI is heading in the world of IaC.
+
+If you're curious about how to integrate AI into your infrastructure workflow—or just want a smarter way to write Terraform—this session is for you.
+
+---
+
 ## 🧠 Key Learning Objectives
 
 By the end of this demo, you'll learn how to:
